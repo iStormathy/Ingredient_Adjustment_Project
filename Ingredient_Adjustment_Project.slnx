@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Ingredient_Adjustment_Project/Ingredient_Adjustment_Project.vcxproj" />
+</Solution>
