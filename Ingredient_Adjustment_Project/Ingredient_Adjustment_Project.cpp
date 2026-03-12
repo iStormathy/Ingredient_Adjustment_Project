@@ -13,12 +13,12 @@ int main()
 	int cookieRequest;
 	cout << "How many cookies would you like to make?" << endl;
 	cin >> cookieRequest;
-	double reqSugar = originalSugar * cookieRequest; // Adjusted calue of ingredients for requested cookies.
+	double reqSugar = originalSugar * cookieRequest; // Adjusted value of ingredients for requested cookies.
 	double reqButter = originalButter * cookieRequest;
 	double reqFlour = originalFlour * cookieRequest;
 	cout << "To make " << cookieRequest << " cookies, you will need the following ingredients:" << endl;
-	cout << reqSugar << " cups of sugar" << endl;
-	cout << reqButter << " cups of butter" << endl;
-	cout << reqFlour << " cups of flour" << endl;
+	cout << fixed << setprecision(2) << reqSugar << " cups of sugar" << endl;
+	cout << fixed << setprecision(2) << reqButter << " cups of butter" << endl;
+	cout << fixed << setprecision(2) << reqFlour << " cups of flour" << endl;
 	return 0;
 }
