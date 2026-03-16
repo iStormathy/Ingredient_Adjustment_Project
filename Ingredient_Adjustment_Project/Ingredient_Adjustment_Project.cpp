@@ -6,19 +6,15 @@ using namespace std;
 
 int main()
 {
-	double recipe = 48; // Number of cookies for the original recipe.
-	double originalSugar = 1.5/recipe; // Adjusts ingredient ammount to fit various requests
-	double originalButter = 1.0 / recipe;
-	double originalFlour = 2.75 / recipe;
-	int cookieRequest;
+	double recipe = 48, request; // Number of cookies for the original recipe.
 	cout << "How many cookies would you like to make?" << endl;
-	cin >> cookieRequest;
-	double reqSugar = originalSugar * cookieRequest; // Adjusted value of ingredients for requested cookies.
-	double reqButter = originalButter * cookieRequest;
-	double reqFlour = originalFlour * cookieRequest;
-	cout << "To make " << cookieRequest << " cookies, you will need the following ingredients:" << endl;
-	cout << fixed << setprecision(2) << reqSugar << " cups of sugar" << endl;
-	cout << fixed << setprecision(2) << reqButter << " cups of butter" << endl;
-	cout << fixed << setprecision(2) << reqFlour << " cups of flour" << endl;
+	cin >> request;
+	double sugar = request * (1.5 / recipe); // adjusts the proportions according to specific requests
+	double butter = request * (1.0 / recipe);
+	double flour = request * (2.75 / recipe);
+	cout << "To make " << request << " cookies, you will need the following ingredients:" << endl;
+	cout << fixed << setprecision(2) << sugar << " cups of sugar" << endl;
+	cout << fixed << setprecision(2) << butter << " cups of butter" << endl;
+	cout << fixed << setprecision(2) << flour << " cups of flour" << endl;
 	return 0;
 }

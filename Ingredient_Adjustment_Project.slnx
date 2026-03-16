@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Ingredient_Adjustment_Project/Ingredient_Adjustment_Project.vcxproj" />
+  <Project Path="Ingredient_Adjustment_Project/Ingredient_Adjustment_Project.vcxproj" Id="5199af88-aee6-4988-8d4f-c23f5555aa43" />
 </Solution>
